@@ -13,5 +13,5 @@ module.exports = functionsBuilder =>
       return result;
     })
     .addWebFunction('GET', '/hello', async (ctx, req) => {
-      return { hello: 'world' };
+      return req;
     });
