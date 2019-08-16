@@ -14,4 +14,7 @@ module.exports = functionsBuilder =>
     })
     .addWebFunction('GET', '/hello', async (ctx, req) => {
       return req;
+    })
+    .addWebFunction('POST', '/hello', async (ctx, req) => {
+      return req;
     });
