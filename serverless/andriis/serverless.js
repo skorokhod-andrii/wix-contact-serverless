@@ -10,7 +10,7 @@ module.exports = functionsBuilder =>
       try {
         const { userId } = req.query;
         const result = await ctx.legacyRpcClient('PlansBoApi', 'com.wixpress.premium.premium-plans')
-          .invoke('getUserPlanPackages', userId);
+          .invoke('getAllUserPlanPackages', userId);
         return result;
       } catch (e){
         return e;
