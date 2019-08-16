@@ -9,7 +9,7 @@ module.exports = functionsBuilder =>
     .addWebFunction('POST', '/getUserPlanPackages', async (ctx, req) => {
       const { userId } = req.query;
       const result = await ctx.legacyRpcClient('PlansBoApi', 'com.wixpress.premium.premium-plans')
-        .invoke('getUserPlanPackages ', userId);
+        .invoke('getUserPlanPackages', userId);
       return result;
     })
     .addWebFunction('GET', '/hello', async (ctx, req) => {
