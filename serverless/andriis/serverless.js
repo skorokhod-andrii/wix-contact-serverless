@@ -12,3 +12,6 @@ module.exports = functionsBuilder =>
         .invoke('getUserPlanPackages ', userId);
       return result;
     })
+    .addWebFunction('GET', '/hello', async (ctx, req) => {
+      return {hello: 'world'};
+    });
