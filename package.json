@@ -1,0 +1,11 @@
+{
+  "name": "wix-contact-serverless",
+  "version": "1.0.0",
+  "description": "Serverless api for wixContact",
+  "main": "serverless.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "andriis@wix.com",
+  "license": "ISC"
+}
